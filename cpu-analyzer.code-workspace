@@ -1,0 +1,33 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "C_Cpp.intelliSenseEngine": "Disabled",
+        "clangd.arguments": [
+            "--compile-commands-dir=${workspaceFolder}",
+            "--background-index",
+            "--clang-tidy",
+            "--header-insertion=iwyu",
+            "--completion-style=detailed",
+            "--function-arg-placeholders"
+        ],
+        "clangd.fallbackFlags": [
+            "-I/usr/include",
+            "-I/usr/local/include"
+        ],
+        "vim.useSystemClipboard": true,
+        "vim.handleKeys": {
+            "<C-Space>": false,
+            "<C-p>": false,
+            "<C-n>": false
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "llvm-vs-code-extensions.vscode-clangd"
+        ]
+    }
+}
